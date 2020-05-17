@@ -1,0 +1,104 @@
+.payment {
+    padding-right: 0;
+    margin-bottom: 63px;
+    @extend .col-12;
+    @extend .col-sm-12;
+    @extend .col-md-12;
+    @extend .col-lg-4;
+
+    &__item {
+        display: block;
+        float: right;
+        text-align: right;
+        padding-left: 60px;
+        
+        &__label {
+            color: $font-light-grey;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        &__select {
+            padding-right: 15px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: url('../assets/icons/kz-angle-down.png') no-repeat right;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 13px;
+            color: $font-main-color;
+            outline: none;
+        }
+    }
+}
+
+@media (max-width: 320px) { 
+    .payment {
+        margin-bottom: 34px;
+        &__item {
+            padding-left: 0;
+            float: left;
+            padding-right: 30px;
+        }
+    }
+}
+
+@media (min-width:  320.02px) and (max-width: 375px) { 
+    .payment {
+        margin-bottom: 34px;
+        &__item {
+            padding-left: 0;
+            float: left;
+            padding-right: 30px;
+        }
+    }
+}
+
+@media (min-width: 375.02px) and (max-width: 575.98px) { 
+    .payment {
+        margin-bottom: 34px;
+        &__item {
+            padding-left: 0;
+            float: left;
+            padding-right: 30px;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 576px) and (max-width: 768px) {  
+    .payment {
+        margin-bottom: 34px;
+        &__item {
+            padding-left: 0;
+            float: left;
+            padding-right: 30px;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768.02px) and (max-width: 992px) { 
+    .payment {
+        margin-bottom: 34px;
+        &__item {
+            padding-left: 0;
+            float: left;
+            padding-right: 30px;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 992.02px) and (max-width: 1199.98px) {  
+    .payment {
+        margin-bottom: 34px;
+        &__item {
+            padding-left: 0;
+            float: left;
+            padding-right: 30px;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.policies-section {
+
+    margin-bottom: 63px;
+    @extend .col-12;
+    @extend .col-sm-12;
+    @extend .col-md-12;
+    @extend .col-lg-4;
+
+    &__link {
+        color: $font-main-color;
+        font-weight: 700;
+        font-size: 13px;
+        margin-right: 45px;
+
+        &:hover {
+            color: $font-main-color;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 320px) { 
+    .policies-section {
+        padding-right: 0;
+        margin-bottom: 34px;
+        &__link {
+            font-size: 13px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media (min-width:  320.02px) and (max-width: 375px) { 
+    .policies-section {
+        padding-right: 0;
+        margin-bottom: 34px;
+        &__link {
+            font-size: 13px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media (min-width: 375.02px) and (max-width: 575.98px) { 
+    .policies-section {
+        padding-right: 0;
+        margin-bottom: 34px;
+        &__link {
+            font-size: 13px;
+            margin-right: 10px;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 576px) and (max-width: 768px) {  
+    .policies-section {
+        padding-right: 0;
+        margin-bottom: 34px;
+        &__link {
+            font-size: 13px;
+            margin-right: 10px;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768.02px) and (max-width: 992px) { 
+    .policies-section {
+        padding-right: 0;
+        margin-bottom: 34px;
+        &__link {
+            font-size: 13px;
+            margin-right: 10px;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 992.02px) and (max-width: 1199.98px) {  
+    .policies-section {
+        margin-bottom: 34px;
+        &__link {
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.product {
+    padding-bottom: 30px;
+
+    &__image {
+
+        @extend .img-fluid;
+    }
+    
+    &__description {
+        padding: 28px 0;
+
+        &__info {
+            font-size: 10px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            
+        }
+
+        &__title {
+            font-size: 13px;
+            color: $font-product-title;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        &__price {
+            font-size: 13px;
+            font-weight: 700;
+        }
+    }
+}

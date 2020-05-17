@@ -1,0 +1,97 @@
+.newsletter-form {
+    width: 34%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid $font-main-color;
+
+    &__input {
+        width: 88.2%;
+        border: none;
+        background: none;
+        font-size: 13px;
+        padding-bottom: 13px;
+        font-weight: 500;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__button {
+        border: none;
+        background: none;
+        font-size: 13px;
+        font-weight: 500;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            outline: none;
+        }
+    }
+}
+
+@media (max-width: 320px) { 
+    .newsletter-form {
+        width: 90%;
+
+        &__input {
+            width: 73%;
+        }
+    }
+}
+
+@media (min-width:  320.02px) and (max-width: 375px) { 
+    .newsletter-form {
+        width: 92%;
+
+        &__input {
+            width: 78%;
+        }
+    }
+}
+
+@media (min-width: 375.02px) and (max-width: 575.98px) { 
+    .newsletter-form {
+        width: 92%;
+
+        &__input {
+            width: 78%;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 576px) and (max-width: 768px) {  
+    .newsletter-form {
+        width: 90%;
+
+        &__input {
+            width: 89%;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768.02px) and (max-width: 992px) { 
+    .newsletter-form {
+
+        &__input {
+            width: 75%;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 992.02px) and (max-width: 1199.98px) {  
+    .newsletter-form {
+
+        &__input {
+            width: 80%;
+        }
+    }
+}
+

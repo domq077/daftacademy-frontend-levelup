@@ -1,0 +1,119 @@
+.offer {
+    position: relative;
+    
+    &__image {
+        width: 100%;
+        height: 100%;
+        @extend .img-fluid;
+    }
+
+    &__title {
+        position: absolute; 
+        top: 40px; 
+        left: 40px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    &__link {
+        position: absolute; 
+        top: 79px; 
+        left: 40px;
+        color: $font-main-color;
+        font-size: 13px;
+        font-weight: 500;
+
+            &:hover {
+                text-decoration: none;
+                color: $font-main-color;
+                border-bottom: solid 2px $font-main-color;
+                display: inline;
+                padding-bottom: 5px;   
+            }
+    }
+
+    &--tworows {
+        grid-column-start: first-col;
+        grid-column-end: second-col;
+        grid-row-start: first-row;
+        grid-row-end: end-row;
+    }
+    
+    &--twocols {
+        grid-column-start: second-col;
+        grid-column-end: end-col;
+        grid-row-start: second-row;
+        grid-row-end: end-row;
+
+    }
+}
+
+@media (max-width: 320px) { 
+    .offer {
+        &--tworows {
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-start: auto;
+            grid-row-end: auto;
+        }
+        
+        &--twocols {
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-start: auto;
+            grid-row-end: auto;
+        }
+    }
+}
+
+
+@media (min-width:  320.02px) and (max-width: 375px) { 
+    .offer {
+        &--tworows {
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-start: auto;
+            grid-row-end: auto;
+        }
+        
+        &--twocols {
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-start: auto;
+            grid-row-end: auto;
+        }
+    }
+}
+
+@media (min-width: 375.02px) and (max-width: 575.98px) { 
+    .offer {
+        &--tworows {
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-start: auto;
+            grid-row-end: auto;
+        }
+        
+        &--twocols {
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-start: auto;
+            grid-row-end: auto;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 576px) and (max-width: 768px) {  
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768.02px) and (max-width: 992px) { 
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 992.02px) and (max-width: 1199.98px) {  
+
+}

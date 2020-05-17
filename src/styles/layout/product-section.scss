@@ -1,0 +1,93 @@
+.product-section {
+    &__container {
+        display: grid;
+        grid-template-columns:  auto auto auto auto;
+        grid-template-rows:  auto auto;
+        gap: 30px;
+        max-width: 1326px;
+        @extend .container-fluid;
+    }
+
+    &__title {
+        font-size: 48px;
+        margin: 109px auto;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &__buttons {
+        text-align: center;
+        margin: 45px 0 100px 0;
+    }
+
+    &__button {
+        width: 136px;
+        height: 48px;
+        font-weight: 500;
+        font-size: 13px;
+        padding: 16px 30px;
+        border: 2px solid $font-main-color;
+        background: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+@media (max-width: 320px) { 
+    .product-section {
+        &__container {
+            grid-template-columns: 45% 45%;
+            justify-items: center;
+        }
+    }
+}
+
+@media (min-width:  320.02px) and (max-width: 375px) { 
+    .product-section {
+        &__container {
+            grid-template-columns: 45% 45%;
+            justify-items: center;
+        }
+    }
+}
+
+@media (min-width: 375.02px) and (max-width: 575.98px) { 
+    .product-section {
+        &__container {
+            grid-template-columns: 45% 45%;
+            justify-items: center;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 576px) and (max-width: 768px) {  
+    .product-section {
+        &__container {
+            grid-template-columns: auto auto;
+            justify-items: center;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768.02px) and (max-width: 992px) { 
+    .product-section {
+        &__container {
+            grid-template-columns: auto auto;
+            justify-items: center;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 992.02px) and (max-width: 1199.98px) {  
+    .product-section {
+        &__container {
+            grid-template-columns: auto auto;
+            justify-items: center;
+        }
+    }
+}

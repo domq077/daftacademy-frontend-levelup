@@ -1,0 +1,217 @@
+.page-navigation {
+    height: 90px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 297px;
+
+    @extend .navbar;
+    @extend .navbar-expand-lg; 
+    
+    &__mobile {
+        @extend .navbar-toggler;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__menu {
+        width: auto;
+        @extend .collapse;
+        @extend .navbar-collapse;
+        
+        
+        &__items {
+            @extend .navbar-nav;
+            
+        }
+
+        &__item{ 
+            @extend .nav-item;
+            @extend .nav-link;
+            color: $font-main-color;
+            margin-right: 20px;
+
+            &:hover {
+                text-decoration: none;
+                color: $font-main-color;
+                border-bottom: solid 2px $font-main-color;
+                display: inline;
+                padding-bottom: 5px;   
+            }
+        }
+    }
+
+    &__logo {
+        padding: 0 27% 0 12%;
+        
+    }
+
+    &__icon {
+        height: 30px;
+        margin: 10px;
+        
+        &:hover {
+            text-decoration: none;
+            color: $font-main-color;
+            border-bottom: solid 2px $font-main-color;
+            display: inline;
+            padding-bottom: 5px;   
+        }
+    }
+}
+
+@media (max-width: 320px) { 
+    .page-navigation {
+        margin: 0;
+        padding: 10px;
+
+        &__menu {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+
+            &__item {
+                margin: 0;
+            }
+        }
+
+        &__logo {
+            padding: 0;
+        }
+
+        &__icon {
+            padding-top: 5px;
+            margin-right: 0px;
+        }
+    }
+}
+
+@media (min-width:  320.02px) and (max-width: 375px) { 
+    .page-navigation {
+        margin: 0;
+        padding: 10px;
+
+        &__menu {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            
+            &__item {
+                margin: 0;
+            }
+        }
+
+        &__logo {
+            padding: 0;
+        }
+
+        &__icon {
+            padding-top: 5px;
+            margin-right: 0px;
+        }
+    }
+}
+
+@media (min-width: 375.02px) and (max-width: 575.98px) { 
+    .page-navigation {
+        margin: 0;
+        padding: 10px;
+
+        &__menu {
+            width: 100%;
+            text-align: center;
+            margin: 0;  
+            
+            &__item {
+                margin: 0;
+            }
+        }
+
+        &__logo {
+            padding: 0 140px 0 0;
+        }
+
+        &__icon {
+            padding-top: 5px;
+            margin-right: 0px;
+        }
+    }
+}
+
+
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 576px) and (max-width: 768px) {  
+    .page-navigation {
+        margin: 0;
+        padding: 10px;
+
+        &__menu {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            
+            &__item {
+                margin: 0;
+            }
+        }
+
+        &__logo {
+            padding: 0;
+        }
+
+        &__icon {
+            float: right;
+            padding-top: 5px;
+            margin-right: 0px;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768.02px) and (max-width: 992px) { 
+    .page-navigation {
+        margin: 0;
+        padding: 10px;
+
+        &__menu {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin: 0; 
+            margin-top: 90px;   
+            
+            &__item {
+                margin: 0;
+            }
+        }
+
+        &__logo {
+            padding: 0;
+        }
+
+        &__icon {
+            float: right;
+            padding-top: 5px;
+            margin-right: 0px;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 992.02px) and (max-width: 1199.98px) {  
+    .page-navigation {
+        margin: 0;
+        padding: 10px;
+
+        &__menu {
+            margin-left: 0;
+        }
+
+        &__logo {
+            padding: 0 250px 0 30px;
+        }
+
+    }
+
+}

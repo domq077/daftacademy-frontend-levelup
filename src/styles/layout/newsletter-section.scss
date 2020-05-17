@@ -1,0 +1,77 @@
+.newsletter-section {
+
+    &__title {
+        font-size: 30px;
+        margin: 98px 0 35px 0;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &__subtitle {
+        color: $font-product-title;
+        font-size: 16px;
+        margin-bottom: 69px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &__info {
+        color: $font-product-title;
+        font-size: 13px;
+        margin-top: 24px;
+        margin-left: 617px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 320px) { 
+    .newsletter-section {
+        &__info {
+            margin-left: 15px;
+        }
+    }
+}
+
+@media (min-width:  320.02px) and (max-width: 375px) { 
+    .newsletter-section {
+        &__info {
+            margin-left: 15px;
+        }
+    }
+}
+
+@media (min-width: 375.02px) and (max-width: 575.98px) { 
+    .newsletter-section {
+        &__info {
+            margin-left: 15px;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 576px) and (max-width: 768px) {  
+    .newsletter-section {
+        &__info {
+            margin-left: 38px;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768.02px) and (max-width: 992px) { 
+    .newsletter-section {
+        &__info {
+            margin-left: 297px;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 992.02px) and (max-width: 1199.98px) {  
+    .newsletter-section {
+        &__info {
+            margin-left: 363px;
+        }
+    }
+}
+

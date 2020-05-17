@@ -1,0 +1,29 @@
+.arrow-top {
+    display: none;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 5px 30px 0 rgba(0, 0, 0, 0.1);
+    height: 48px;
+    width: 48px;
+    top: 20px;
+    right: 45px;
+    border-radius: 50%;
+    z-index: 1000;
+
+    &__image {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

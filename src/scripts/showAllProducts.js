@@ -1,40 +1,8 @@
-const showAllProducts = () => {
+const showAllProducts = (prodctsArray) => {
     const btn = document.getElementById('allProductsButton');
     const productsContainer = document.getElementById('productsContainer');
     let executed = false;
-    const products = [
-        {
-            src: 'https://via.placeholder.com/309x390?text=309x390',
-            title: 'product1',
-            price: 'price1'
-        },
-        {
-            src: 'https://via.placeholder.com/309x390?text=309x390',
-            title: 'product2',
-            price: 'price2'
-        },
-        {
-            src: 'https://via.placeholder.com/309x390?text=309x390',
-            title: 'product3',
-            price: 'price3'
-        },
-        {
-            src: 'https://via.placeholder.com/309x390?text=309x390',
-            title: 'product4',
-            price: 'price4'
-        },
-        {
-            src: 'https://via.placeholder.com/309x390?text=309x390',
-            title: 'product5',
-            price: 'price5'
-        },
-        {
-            src: 'https://via.placeholder.com/309x390?text=309x390',
-            title: 'product6',
-            price: 'price6'
-        }
-    ];
-
+    const products = prodctsArray;
     btn.addEventListener('click', () => {
         if(!executed) {
             products.forEach((product) => {

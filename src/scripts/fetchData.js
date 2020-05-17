@@ -1,4 +1,8 @@
+import showAllProducts from './showAllProducts';
+
 const fetchData = () => {
+    const productsArray = []
+    
     //slider
     const sliderItemImages = document.getElementsByClassName('slider-section__item__image');
     const sliderItemTitle = document.getElementsByClassName('slider-section__item__title');
@@ -56,6 +60,13 @@ const fetchData = () => {
     })
     .then(response => response.json())
     .then(data => {
+        data.products.map((el) => {
+            productsArray.push({
+                src: 'http://' + el.imageUrl,
+                title: el.name,
+                price: el.price.current.text
+            })
+        })
         itemsSuccess(data, sliderItemImages, sliderItemTitle, sliderItemPrice, starter);
         itemsSuccess(data, newArrivalsImages, newArrivalsTitle, newArrivalsPrice, afterSlider);
         itemsSuccess(data, offerImages, offerTitle, null, afterNewArrivals);
@@ -66,6 +77,8 @@ const fetchData = () => {
         itemsFailed(newArrivalsImages, newArrivalsTitle, newArrivalsPrice);
         itemsFailed(offerImages, offerTitle, null);
     });
+
+    showAllProducts(productsArray);
 }
 
 export default fetchData;
